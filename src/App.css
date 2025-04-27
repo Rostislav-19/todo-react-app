@@ -1,0 +1,129 @@
+:root {
+  --primary-color: #4f46e5;
+  --primary-hover: #4338ca;
+  --background-light: #f3f4f6;
+  --background: #ffffff;
+  --border-radius: 12px;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-light);
+  font-family: var(--font-family);
+}
+
+.app {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+select {
+  padding: 10px 14px;
+  border-radius: var(--border-radius);
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+select:hover {
+  border-color: var(--primary-color);
+}
+
+.sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.section {
+  background: var(--background);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.todo-item {
+  background: var(--background-light);
+  padding: 12px 16px;
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+.todo-item:hover {
+  background: #e5e7eb;
+}
+
+.todo-item span {
+  font-size: 16px;
+  color: #333;
+}
+
+.todo-item small {
+  font-style: italic;
+  color: #888;
+  margin-left: 5px;
+}
+
+.todo-item button {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: var(--border-radius);
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.todo-item button:hover {
+  background: var(--primary-hover);
+}
+
+.sort-dropdown {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.sort-dropdown select {
+  padding: 8px 14px;
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.sort-dropdown select:hover {
+  background-color: var(--background-light);
+}
