@@ -1,4 +1,4 @@
-![](./images/Screenshot 2025-04-27 182247.png)
+![](./images/screenshot.png)
 ## Изисквания
 
 - **Node.js** (версия >= v14.0.0)
